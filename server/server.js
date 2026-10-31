@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 const app = express();
-app.use(cors());
+app.use(cors({origin: process.env.CLIENT_URL || "http://localhost:5173"}));
 app.use(express.json());
 app.post("/api/search", async(req, res) => {
     const {topic} = req.body;
@@ -43,7 +43,7 @@ app.post("/api/search", async(req, res) => {
         });
     }
 });
-
-app.listen(3001, () => {
-    console.log("CourseBuilder API running on port 3001");
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+    console.log(`CourseBuilder API running on port ${PORT}`);
 })

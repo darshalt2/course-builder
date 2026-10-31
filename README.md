@@ -1,16 +1,44 @@
-# React + Vite
+# CourseBuilder
+This is a web application where you can enter a topic you want to learn and get a generated course with relevant articles and videos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Tech Stack
+**Frontend**
+- React
+- React Router
+- Vite
+- CSS
 
-Currently, two official plugins are available:
+**Backend**
+- Node.js
+- Express.js
+- Brave Search API
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Prerequisites for installation
+- Node.js and npm installed
+- Brave Search API key
 
-## React Compiler
+### Installation
+1. Clone the repository:
+```bash
+git clone https://github.com/darshalt2/course-builder.git
+```
+2. Navigate into project directory and install dependencies:
+```bash
+cd course-builder
+npm install
+```
+3. Create a .env file in the root directory and add your Brave Search API key there:
+```env
+BRAVE_SEARCH_API_KEY=your_api_key
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Running
+Start the backend server:
+```bash
+npm run server
+```
+Start the frontend in a separate terminal:
+```bash
+npm run dev
+```
+Then, open the local URL provided by Vite.

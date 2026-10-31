@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #222;
+}
+
+.navbar {
+  height: 64px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #222;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #555;
+}
+
+.page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.page h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #555;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-container button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.create-course {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #222;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.course-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.course-card h2 {
+  margin-top: 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.courses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.courses-header h1 {
+  margin-bottom: 10px;
+}
+
+.create-course {
+  background: #222;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.course-card {
+  background: white;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 25px;
+}
+
+.course-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.course-heading h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.course-status {
+  display: inline-block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.course-status.complete {
+  color: #16834a;
+}
+
+.delete-button {
+  border: none;
+  background: #f5e5e5;
+  color: #b83232;
+  padding: 9px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #f0d2d2;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 9px;
+  background: #e5e5e5;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.progress {
+  height: 100%;
+  background: #278653;
+  border-radius: 10px;
+  transition: width 0.3 ease;
+}
+
+.resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.resource-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: background 0.2s;
+}
+
+.resource-card.completed {
+  background: #f5faf6;
+  border-color: #c5dfcc;
+}
+
+.resource-type {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.resource-info h3 {
+  margin: 10px 0;
+}
+
+.resource-info p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.resource-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.open-button, .complete-button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.open-button {
+  background: #222;
+  color: white;
+}
+
+.complete-button {
+  background: white;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.resource-card.completed .complete-button {
+  background: #278653;
+  color: white;
+  border-color: #278653;
+}
+
+.empty-state {
+  background: white;
+  padding: 50px 25px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.empty-state p {
+  color: #555;
+  margin-bottom: 25px;
+}

@@ -42,3 +42,6 @@ Start the frontend in a separate terminal:
 npm run dev
 ```
 Then, open the local URL provided by Vite.
+
+## Live Demo
+https://course-builder-app-nu.vercel.app/
